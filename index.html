@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Activitat Efecte Parallax</title>
+
+    <style>
+        body {
+            background-image: url(./img/header.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Roboto";
+            padding: 0;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            src: url(./fonts/Roboto-Thin.ttf);
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        ul li:not(:last-of-type) a {
+            border-right: rgba(255, 255, 255, 0.253) solid 0.1px;
+
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #4473729a;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        header {
+            margin-top: 30%;
+            background-color: #eee;
+        }
+
+        .headline {
+            width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #aaa;
+            padding-top:50px ;
+        }
+
+        .paragraph-border-bottom {
+            border-bottom: #888 solid 2px;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .heading {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .heading div {
+            width: 30%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .heading h2 {
+            font-size: 1.2rem;
+        }
+
+        .heading a {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #5b7;
+            text-transform: capitalize;
+            text-decoration: none;
+            color:#fff;
+        }
+
+        main {
+            background-color: #fff;
+        }
+
+        section {
+            display: flex;
+            flex-flow: row wrap;
+            width: 50%;
+            margin: auto;
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+
+        article {
+            width: 50%;
+        }
+
+        article img {
+            display: block;
+            width: 99%;
+            text-align: center;
+        }
+
+        .transparent {
+            background-color: transparent;
+        }
+
+        .transparent p {
+            display: block;
+            text-align: center;
+            font-size: 1.7rem;
+            width: 60%;
+            margin: auto;
+            padding: 100px;
+            color: #fff;
+
+        }
+
+        footer {
+            background-color: #222;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        footer h3 {
+            font-size: 2.7rem;
+            padding: 50px;
+        }
+
+        footer p {
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+
+        footer h4 {
+            padding: 30px;
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">paci2</a></li>
+            <li><a href="#" class="last">paci3</a></li>
+        </ul>
+    </nav>
+
+    <header>
+
+        <div class="headline">
+            <h1>Maquetación de una web con html y css</h1>
+            <p class="paragraph-border-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+                ducimus quae, ratione corrupti, minus
+                possimus. Unde maxime repudiandae, delectus ab perferendis cum eaque reprehenderit, necessitatibus velit
+                reiciendis atque totam culpa.</p>
+
+            <div class="heading">
+                <div>
+                    <h2>bala bla bla</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci reiciendis culpa unde
+                        consequuntur in blanditiis neque odit, voluptates, officia laborum porro deleniti nam.
+                        Repudiandae
+                        optio ab, veritatis pariatur! Corrupti</p>
+                    <a href="#">read more</a>
+                </div>
+
+                <div>
+                    <h2>bala bla bla</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci reiciendis culpa unde
+                        consequuntur in blanditiis neque odit, voluptates, officia laborum porro deleniti nam.
+                        Repudiandae
+                        optio ab, veritatis pariatur! Corrupti</p>
+
+                    <a href="#">read more</a>
+                </div>
+
+                <div>
+                    <h2>bala bla bla</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci reiciendis culpa unde
+                        consequuntur in blanditiis neque odit, voluptates, officia laborum porro deleniti nam.
+                        Repudiandae
+                        optio ab, veritatis pariatur! Corrupti</p>
+                    <a href="#">read more</a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+
+            <article>
+                <img src="./img/pic01.jpg" alt="">
+                <h2>bala bla bla</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, doloremque, ipsa. Saepe, dolorem
+                    totam consectetur. Sunt eos molestias nihil praesentium vero natus deleniti reiciendis ex laborum
+                    distinctio, excepturi quo laudantium.</p>
+            </article>
+            <article>
+                <img src="./img/pic02.jpg" alt="">
+
+                <h2>bala bla bla</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, doloremque, ipsa. Saepe, dolorem
+                    totam consectetur. Sunt eos molestias nihil praesentium vero natus deleniti reiciendis ex laborum
+                    distinctio, excepturi quo laudantium.</p>
+            </article>
+            <article>
+                <img src="./img/pic03.jpg" alt="">
+
+                <h2>bala bla bla</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, doloremque, ipsa. Saepe, dolorem
+                    totam consectetur. Sunt eos molestias nihil praesentium vero natus deleniti reiciendis ex laborum
+                    distinctio, excepturi quo laudantium.</p>
+            </article>
+            <article>
+                <img src="./img/pic04.jpg" alt="">
+
+                <h2>bala bla bla</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, doloremque, ipsa. Saepe, dolorem
+                    totam consectetur. Sunt eos molestias nihil praesentium vero natus deleniti reiciendis ex laborum
+                    distinctio, excepturi quo laudantium.</p>
+            </article>
+        </section>
+    </main>
+
+    <div class="transparent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quae iure autem esse, harum necessitatibus
+            earum consequatur omnis dolor consectetur, odio cum reiciendis expedita neque quod vero et in Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Adipisci animi laborum mollitia nemo dolore sit expedita vel
+            quasi,</p>
+    </div>
+
+    <footer>
+        <h3>bla bla bla</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quos eius sit, ipsam blanditiis dolore hic
+            quae mollitia, aspernatur! Iusto maiores reprehenderit placeat. Recusandae fuga amet, magnam dolor error
+            soluta.</p>
+
+        <h4>bla bla bla</h4>
+    </footer>
+
+
+</body>
+
+</html>
